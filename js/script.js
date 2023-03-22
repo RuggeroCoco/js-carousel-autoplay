@@ -49,14 +49,15 @@ function nextImage() {
     setActiveImage(activeItem);
     disableImage(images[activeItem - 1]);
   }
-  console.log("peripoccu");
 }
 
 nextBtn.addEventListener("click", function () {
-  clearInterval(timer);
+  stopTimer();
   nextImage();
-  setInterval(nextImage, 3000);
+  startTimer();
 });
+
+startTimer();
 
 prevBtn.addEventListener("click", function () {
   if (activeItem === 0) {

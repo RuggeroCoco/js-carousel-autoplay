@@ -47,6 +47,7 @@ img {
   opacity: 1;
   transition: 0.5s;
 }
+
 .prev {
   position: absolute;
   background-color: lightgray;
